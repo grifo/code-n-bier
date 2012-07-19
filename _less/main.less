@@ -1,0 +1,110 @@
+@import "mixins";
+@import "reset";
+
+// ------------------------------------ //
+// VARIÁVEIS
+@blue: #072466;
+@blue-hover: #375496;
+@orange: #e39600;
+@green: #476f16;
+
+@import "forms";
+
+#skiplinks {
+	position:absolute;
+	left:-9999px;
+}
+
+// ------------------------------------ //
+/* GERAL */
+
+@width: 960px;
+
+@main-color: #B91010;
+@sub-color: #333;
+@high-color: #422000;
+
+header, .wrapper {
+	width: @width;
+	margin: 0 auto;
+}
+
+html {
+	#gradient .radial(#112211, #222, center top);
+	background: #111;
+	height: 100%;
+}
+
+body {
+	font: 400 14px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
+	color: @sub-color;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+}
+
+header {
+	height: 120px;
+	h1, h2 {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	h1 {
+		.IR();
+		width: 98px;
+		height: 120px;
+		background: url(../images/logo-grifo.png) center center no-repeat;
+		margin-right: 20px;
+		//background-size: 80%;
+	}
+	h2 { 
+		font: 400 50px/120px 'Bree Serif', Georgia, serif;
+		letter-spacing: -2px;
+		color: @main-color;
+	}
+}
+
+.btn {
+	#gradient .vertical(#CF962D, #FFCC47);
+	display: inline-block;
+	padding: 10px 20px;
+	color: @sub-color;
+	text-decoration: none;
+	@sdw: 0 0 1px 1px rgba(255, 255, 255, .3) inset, 0 1px 0 rgba(0, 0, 0, .2);
+	.box-shadow(@sdw);
+	border: 1px solid #333;
+	.border-radius(3px);
+	text-shadow: -1px -1px 0 #FFCC47;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+section {
+	.board {
+		height: 390px;
+		@sdw: inset 0 0 5px rgba(0, 0, 0, .5), 0 1px 0 rgba(0, 0, 0, .2);
+		.box-shadow(@sdw);
+		background: url(../images/board.jpg) top center no-repeat;
+	}
+	h1, p {
+		margin-bottom: 30px;
+		max-width: 400px;
+		color: white;
+	}
+	h1 {
+		padding-top: 60px;
+		font-size: 30px;
+		line-height: 1.2;
+		color: white;
+	}
+	p {
+		font-size: 16px;
+	}
+}
+
+a {
+
+}
+
+
+// ------------------------------------ //
+@import "print";
