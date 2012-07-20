@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Code 'n' Bier</title>
+    <title>Code n' Bier</title>
     <meta name="description" content="" />
     
     <script> document.getElementsByTagName('html')[0].className += 'js' </script>
@@ -17,8 +17,6 @@
     
     <link rel="stylesheet" href="styles/main.css" />
 
-    <!-- Substituir por custom build: http://www.modernizr.com/download/ -->
-    <script src="scripts/vendor/modernizr-2.5.3.min.js"></script>
     <script src="scripts/vendor/respond.min.js"></script>
 
     <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
@@ -28,17 +26,19 @@
 <body>
     
     <div id="skiplinks">
-        <a href="#nav">Pular para a navegação</a>
         <a href="#content">Pular para o conteúdo</a>
     </div>
 
     <header>
-        <hgroup>
-            <h1>Grifo</h1>
-            <!-- <h2>Code n' Bier</h2> -->
-        </hgroup>
+        <div class="wrapper">
+            <h1>
+                <img src="images/logo-grifo.png" width="98" height="63">
+                Grifo apresenta
+            </h1>
+        </div>
     </header>
-    <section>
+
+    <article>
         <div class="board">
             <div class="wrapper">
                 <h1>O primeiro dojo de programação JavaScript dentro de um bar</h1>
@@ -46,38 +46,42 @@
                 <a href="" class="btn">Pague com um tweet</a>
             </div>
         </div>
-    </section>
+        <div id="content" class="wrapper">
+            <div class="what">
+                <h2>O que é</h2>
+                <p>Dojo de programção é um evento em que</p>
+                <ul>
+                    <li>Programadores (e simpatizantes) se reúnem para aprender</li>
+                    <li>Experiências compartilhadas em grupo</li>
+                    <li>Ambiente colaborativo e inclusivo</li>
+                </ul>
+            </div>
+            <div class="when">
+                <h2>Quando</h2>
+                <p>Será dia <time datetime="2012-08-01T19:00-03:00"><span class="date">1º de Agosto</span> as <span class="hour">19hs</span></time></p>
 
-
-    <div id="header">
-        <div role="banner">
-            <h1 class="logo">Título do site</h1>
+                <h2>Onde</h2>
+                <h3>Dhomba</h3>
+                <p class="address">
+                    Lima e Silva, 1037<br>
+                    Cidade Baixa - Porto Alegre
+                </p>
+            </div>
+            <div class="map">
+                <img src="images/map.png" alt="mapa de localização">
+                <a href="https://maps.google.com.br/maps?q=Lima+e+Silva,+1037+Cidade+Baixa+-+Porto+Alegre&hl=pt-BR&sll=-14.239424,-53.186502&sspn=49.741431,79.013672&hnear=R.+Gen.+Lima+E+Silva,+1037+-+Cidade+Baixa,+Porto+Alegre+-+Rio+Grande+do+Sul,+90050-102&t=m&z=16" rel="external" class="btn">ver no maps</a>
+            </div>
         </div>
-        <ul id="nav" role="navigation">
-            <li><a href="#">Home</a></li>
-        </ul>
-    </div>
-    
-    <div id="sidebar" role="complementary">
-    </div>
-    
-    <div id="content" role="main">
-    </div>
-    
-    <div id="footer" role="contentinfo">
-    </div>
+    </article>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script> window.jQuery || document.write('<script src="scripts/vendor/jquery-1.7.1.min.js"><\/script>') </script>
+    <footer>
+        <div class="wrapper">
+            <a href="//dhomba.com.br" rel="external" class="dhomba">Dhomba</a>
+            <a href="//gri.fo" rel="external" class="grifo">Grifo</a>
+        </div>
+    </footer>
 
-    <script src="scripts/plugins.js"></script>
-    <script src="scripts/base.js"></script>
-    
-    <!-- Prompt IE 6 users to install Chrome Frame. -->
-    <!--[if lt IE 7 ]>
-      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-    <![endif]-->
+    <script src="scripts/main.js"></script>
 
     <!-- Google Analytics assíncrono. Troque UA-XXXXX-X pelo ID do site. -->
     <script>

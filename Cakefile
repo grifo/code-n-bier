@@ -6,7 +6,7 @@ global.coffee = []
 global.less = []
 
 # CONFIGURATION
-coffee.push 'main', 'but'
+coffee.push 'main'
 less.push 'main'
 
 coffee.src = '_coffee/'

@@ -22,48 +22,75 @@
 
 @main-color: #B91010;
 @sub-color: #333;
-@high-color: #422000;
+@high-color: #CF962D;
 
-header, .wrapper {
+@main-font: 'Bree Serif', Georgia, serif;
+@sub-font: 'Open Sans', Verdana, Helvetica, sans-serif;
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
 	width: @width;
 	margin: 0 auto;
 }
 
 html {
-	#gradient .radial(#112211, #222, center top);
-	background: #111;
+	//#gradient .radial(#112211, #222, center top);
+	background: url(http://noisepng.com/100-20-5.png) #222;
 	height: 100%;
 }
 
 body {
-	font: 400 14px/1.6 'Open Sans', Verdana, Helvetica, sans-serif;
+	font: 400 14px/1.6 @sub-font;
 	color: @sub-color;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
 }
 
+header, footer {
+	background-color: #111;
+}
+
 header {
 	height: 120px;
-	h1, h2 {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	h1 {
-		.IR();
-		width: 98px;
-		height: 120px;
-		background: url(../images/logo-grifo.png) center center no-repeat;
-		margin-right: 20px;
-		//background-size: 80%;
-	}
-	h2 { 
-		font: 400 50px/120px 'Bree Serif', Georgia, serif;
+	h1 { 
+		font: 400 30px/120px @main-font;
 		letter-spacing: -2px;
 		color: @main-color;
+		img {
+			vertical-align: bottom;
+			margin-bottom: 30px;
+			display: inline-block;
+		}
 	}
 }
 
+footer {
+	border-top: 1px solid #333;
+	.wrapper {
+		height: 100px;
+	}
+	.grifo {
+        position:absolute;
+        bottom:-10px;
+        right:0;
+        .IR(80px, 90px, url(../images/tag-grifo.png));
+        .transition(all .2s);
+        cursor:pointer;
+        &:hover {
+            bottom:-2px;
+            .transform(rotate(-2deg));
+        }
+    }
+    .dhomba {
+    	position: absolute;
+    	right: 120px;
+    	bottom: 20px;
+    	.IR(60px, 60px, url(../images/logo-dhomba.png));
+    }
+}
+
 .btn {
-	#gradient .vertical(#CF962D, #FFCC47);
+	#gradient .vertical(@high-color, #FFCC47);
 	display: inline-block;
 	padding: 10px 20px;
 	color: @sub-color;
@@ -78,16 +105,18 @@ header {
 	font-weight: bold;
 }
 
-section {
-	.board {
-		height: 390px;
-		@sdw: inset 0 0 5px rgba(0, 0, 0, .5), 0 1px 0 rgba(0, 0, 0, .2);
-		.box-shadow(@sdw);
-		background: url(../images/board.jpg) top center no-repeat;
-	}
+
+.board {
+	height: 390px;
+	@sdw: inset 0 0 5px rgba(0, 0, 0, .5), 0 1px 0 rgba(0, 0, 0, .2);
+	.box-shadow(@sdw);
+	background: url(../images/board.jpg) top center no-repeat;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+
 	h1, p {
 		margin-bottom: 30px;
-		max-width: 400px;
+		max-width: 380px;
 		color: white;
 	}
 	h1 {
@@ -101,8 +130,67 @@ section {
 	}
 }
 
-a {
+#content {
+	padding: 40px 0;
+}
 
+#content > div {
+	float: left;
+	color: white;
+	h2 {
+		margin-bottom: 20px;
+		font: 400 30px/1 @main-font;
+		letter-spacing: -2px;
+		color: @main-color;
+	}
+	h2 ~ h2 {
+		margin-top: 30px;
+	}
+
+	&.what {
+		width: 380px;
+		padding-right: 30px;
+		p {
+			margin-bottom: 10px;
+		}
+		li {
+			color: darken(white, 40);
+			list-style: square inside;
+			margin-bottom: 10px;
+		}
+	}
+
+	&.when {
+		width: 250px;
+		color: darken(white, 40);
+		time {
+			display: block;
+		}
+		.hour, .date, h3 {
+			margin-bottom: 5px;
+			font: 400 22px/1 @main-font;
+			color: white;
+		}
+
+		.address {
+			color: white;
+		}
+	}
+
+	&.map {
+		width: 300px;
+		padding-top: 45px;
+		img {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.btn {
+			float: right;
+			font-size: 14px;
+			line-height: 20px;
+			padding: 8px 14px;
+		}
+	}
 }
 
 
