@@ -1,5 +1,5 @@
 /*
-  2012-07-20 22:31 GMT
+  2012-07-20 22:36 GMT
   _less/main.less > styles/main.css
   
   created by Grifo
@@ -50,7 +50,7 @@ footer .dhomba{right:90px;text-align:left;font:0/0 a;text-shadow:none;width:90px
 #content>div.what{width:380px;padding-right:30px;}#content>div.what p{margin-bottom:10px;}
 #content>div.when{width:250px;color:#999999;}#content>div.when time{display:block;}
 #content>div.when .hour,#content>div.when .date,#content>div.when h3{margin-bottom:5px;font:400 22px/1 'Bree Serif',Georgia,serif;color:white;}
-#content>div.when h3{color:#daab55;}
+#content>div.when h3{color:#999999;}
 #content>div.when .address{color:white;}
 #content>div.map{width:300px;padding-top:50px;}#content>div.map img{width:100%;margin-bottom:10px;}
 #content>div.map .btn{float:right;font-size:14px;line-height:20px;padding:8px 14px;}
