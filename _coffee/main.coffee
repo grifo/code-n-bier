@@ -6,5 +6,5 @@ $$ = (sel) ->
 
 $('a[rel=external]').forEach (item) ->
     item.addEventListener 'click', (e) ->
-      e.preventDefault()
-      window.open(e.target.href || e.target.parentNode.href);
+        e.preventDefault()
+        window.open(e.target.href || e.target.parentNode.href);
