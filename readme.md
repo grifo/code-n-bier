@@ -21,12 +21,12 @@ Problema inspirado em <http://projecteuler.net/problem=1>
 ## Test Framework e Assertion library
 
 ### Mocha
-[Mocha](//visionmedia.github.com/mocha/) é um framework de testes que roda em node e browser. O framework permite utilizar diferentes DSLs para escrever os testes, entre elas *BDD* e *TDD*.
+[Mocha](http://visionmedia.github.com/mocha/) é um framework de testes que roda em node e browser. O framework permite utilizar diferentes DSLs para escrever os testes, entre elas *BDD* e *TDD*.
 
 Para o Dojo utilizamos a versão para browser com a interface *TDD*.
 
 
 ### Chai Assertion Library
-[Chai](//chaijs.com/) é uma biblioteca para *assertion* para node e browser. A biblioteca define diferentes interfaces de testes, entre elas *Should*, *Expect* e *Assert*.
+[Chai](http://chaijs.com/) é uma biblioteca para *assertion* para node e browser. A biblioteca define diferentes interfaces de testes, entre elas *Should*, *Expect* e *Assert*.
 
 Nossos testes estão escritos com *Assert*, estilo clássico para TDD. 
