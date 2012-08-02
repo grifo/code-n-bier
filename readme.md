@@ -1,10 +1,10 @@
 # Dojo de 01 de agosto de 2012
 
 <br>
-
 ## Post no blog da Grifo sobre o evento
 [Code n' Bier - Primeira Edição](http://gri.fo/blog/code-n-bier-primeira-edicao)
 
+<br>
 ## Problema: Lista e soma
 
 Para os números naturais menores que 10 e múltiplos de 3 ou 5 temos 3, 5, 6 e 9. A soma destes múltiplos resulta em 23.
@@ -15,19 +15,16 @@ Queremos um algoritmo que, dado um número natural, ele retorne a coleção de t
 
 **Saída:** 3, 5, 6, 9, 10, 12, 45
 
-<br>
 Problema inspirado em <http://projecteuler.net/problem=1>
 
+<br>
 ## Test Framework e Assertion library
 
-<br>
 ### Mocha
 [Mocha](http://visionmedia.github.com/mocha/) é um framework de testes que roda em node e browser. O framework permite utilizar diferentes DSLs para escrever os testes, entre elas *BDD* e *TDD*.
 
 Para o Dojo utilizamos a versão para browser com a interface *TDD*.
 
-
-<br>
 ### Chai Assertion Library
 [Chai](http://chaijs.com/) é uma biblioteca para *assertion* para node e browser. A biblioteca define diferentes interfaces de testes, entre elas *Should*, *Expect* e *Assert*.
 
