@@ -21,7 +21,7 @@ Problema inspirado em <http://projecteuler.net/problem=1>
 Para o Dojo utilizamos a versão para browser com a interface *TDD*.
 
 
-### Chai Assetion Library
+### Chai Assertion Library
 [Chai](//chaijs.com/) é uma biblioteca para *assertion* para node e browser. A biblioteca define diferentes interfaces de testes, entre elas *Should*, *Expect* e *Assert*.
 
 Nossos testes estão escritos com *Assert*, estilo clássico para TDD. 
