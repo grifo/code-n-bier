@@ -1,5 +1,8 @@
 # Dojo de 01 de agosto de 2012
 
+## Post no blog da Grifo sobre o evento
+[Code n' Bier - Primeira Edição](//gri.fo/blog/code-n-bier-primeira-edicao)
+
 ## Problema: Lista e soma
 
 Para os números naturais menores que 10 e múltiplos de 3 ou 5 temos 3, 5, 6 e 9. A soma destes múltiplos resulta em 23.
