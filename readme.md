@@ -1,7 +1,9 @@
 # Dojo de 01 de agosto de 2012
 
+<br>
+
 ## Post no blog da Grifo sobre o evento
-[Code n' Bier - Primeira Edição](//gri.fo/blog/code-n-bier-primeira-edicao)
+[Code n' Bier - Primeira Edição](http://gri.fo/blog/code-n-bier-primeira-edicao)
 
 ## Problema: Lista e soma
 
