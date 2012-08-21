@@ -82,15 +82,21 @@
     height: @height;
     background:@bg no-repeat @xy;
 }
+
 .transform(@rules) {
-    -moz-transform: @rules;
-    -o-transform: @rules;
     -webkit-transform: @rules;
-    transform: @rules;
+       -moz-transform: @rules;
+         -o-transform: @rules;
+            transform: @rules;
 }
+.translate(@x, @y) {
+    .transform(translate(@x, @y));
+    .transform(translate3d(@x, @y, 0));
+}
+
 .transition(@rules) {
     -webkit-transition:@rules;
-    -moz-transition:@rules;
-    -o-transition:@rules;
-    transition:@rules
+       -moz-transition:@rules;
+         -o-transition:@rules;
+            transition:@rules
 }
