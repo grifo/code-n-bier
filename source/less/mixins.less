@@ -1,9 +1,15 @@
 .inline-block() {
-    display:-moz-inline-stack;
-    display:inline-block;
-    position:relative;
-    *display:inline;
-    zoom:1;
+    display: -moz-inline-stack;
+    display: inline-block;
+    position: relative;
+    *display: inline;
+    zoom: 1;
+}
+.box-sizing(@s) {
+    -webkit-box-sizing: @s;
+       -moz-box-sizing: @s;
+        -ms-box-sizing: @s;
+            box-sizing: @s;
 }
 .min-height(@height) {
     min-height: @height;
@@ -29,22 +35,16 @@
     -ms-filter: %('progid:DXImageTransform.Microsoft.Alpha(Opacity=%d)', @alpha * 100);
 }
  
-.text-shadow(@shadow) {
-    text-shadow: @shadow;
-    -moz-text-shadow: @shadow;
-    -webkit-text-shadow: @shadow;
-}
- 
 .box-shadow(@shadow) {
-    box-shadow: @shadow;
-    -moz-box-shadow: @shadow;
     -webkit-box-shadow: @shadow;
+       -moz-box-shadow: @shadow;
+            box-shadow: @shadow;
 }
 .transition(@trans) {
     -webkit-transition: @trans;
-    -moz-transition: @trans;
-    -o-transition: @trans;
-    transition: @trans;
+       -moz-transition: @trans;
+         -o-transition: @trans;
+            transition: @trans;
 }
 
 #gradient {

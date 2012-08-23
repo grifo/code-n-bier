@@ -14,7 +14,7 @@
 // ------------------------------------ //
 /* GERAL */
 
-@width: 960px;
+@width: 990px;
 
 @main-color: #CD4129;
 @sub-color: #333;
@@ -22,6 +22,9 @@
 
 @main-font: 'Bree Serif', Georgia, serif;
 @sub-font: 'Open Sans', Verdana, Helvetica, sans-serif;
+
+
+@boardSize: 480px;
 
 .highlight(@color-backgroun: #111, @color-shadow: #222) {
     .box-shadow(~"1px 1px 1px @{color-shadow}, inset 1px 1px 1px rgba(255,255,255,.1)");
@@ -36,7 +39,9 @@
 .wrapper {
     position: relative;
     overflow: hidden;
-    width: @width;
+    max-width: @width - 60;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0 auto;
 }
 
@@ -97,10 +102,11 @@ body > footer {
         position:absolute;
     }
     .cc {
-        line-height: 60px;
-        bottom: 0;
+        line-height: 12px;
+        bottom: 24px;
         color: darken(white, 30);
         font-size: 12px;
+        margin-right: 190px;
         &:hover {
             color: darken(white, 10);
         }
@@ -124,6 +130,7 @@ body > footer {
         .IR(90px, 90px, url(../images/tag-dhomba.png));
     }
 }
+
 
 .btn {
     #gradient .vertical(@high-color, #FFCC47);
@@ -160,9 +167,8 @@ body > footer {
 
 
 .board {
-    @size: 480px;
     overflow: hidden;
-    height: @size;
+    height: @boardSize;
 
     .box-shadow(~"inset 0 0 5px rgba(0, 0, 0, .5), 0 1px 0 rgba(0, 0, 0, .2)");
     border-top: 1px solid #333;
@@ -172,12 +178,13 @@ body > footer {
         background-position: center top;
         background-repeat: no-repeat;
         .wrapper {
-            height: @size;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            height: @boardSize - 120;
             background: url(../images/logo-codenbier.png) right center no-repeat;
         }
         header {
             position: relative;
-            margin-top: 60px;
         }
     }
 
@@ -189,12 +196,7 @@ body > footer {
             padding: 0 10px;
             height: 60px;
             letter-spacing: -4px;
-            margin: -5px 15px 0 0;
-            /*.opacity(.2);
-            color: lighten(@high-color, 10);
-            font: italic 80px/1 @main-font;
-            margin: -20px 24px 0 -8px;
-            letter-spacing: -8px;*/
+            margin: -5px 15px -5px 0;
         }
         time {
             display: block;
@@ -272,12 +274,15 @@ body > footer {
 }
 
 section {
-    padding: 50px 0;
-}
-
-section > div {
-    float: left;
-    color: white;
+    padding-top: 50px;
+    .box {
+        .box-sizing(border-box);
+        overflow: hidden;
+        float: left;
+        width: 33%;
+        margin-bottom: 50px;
+        color: white;
+    }
 
     h1 {
         margin-bottom: 24px;
@@ -286,7 +291,7 @@ section > div {
         color: @main-color;
         word-spacing: 4px;
         ~ h1 {
-            margin-top: 30px;
+            margin-top: 50px;
         }
     }
     b {
@@ -296,19 +301,14 @@ section > div {
         font: 15px @sub-font;
     }
 
-
-    @GRID: (960px - 80) / 8;
-
-    &.box01 {
-        width: @GRID * 3;
+    .box01 {
         padding-right: 40px;
         p {
             margin-bottom: 18px;
         }
     }
 
-    &.box02 {
-        width: @GRID * 2;
+    .box02 {
         padding-right: 40px;
         h2 {
             margin-bottom: 5px;
@@ -320,8 +320,7 @@ section > div {
         }
     }
 
-    &.box03 {
-        width: @GRID * 3;
+    .box03 {
         img {
             width: 100%;
             margin-bottom: 10px;
@@ -331,6 +330,78 @@ section > div {
         }
     }
 }
+
+// Portrait tablet to landscape and desktop
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+// Landscape phone to portrait tablet
+@media (max-width: 767px) {
+    .board article {
+        background-position: 30% top;
+        .wrapper {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            height: @boardSize - 80;
+            background-size: auto 100px;
+            background-position: 15px 0;
+        }
+        h1, p {
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        .info {
+            height: 120px;
+            padding-top: 5px;
+            padding-left: 140px;
+            line-height: 1.4;
+            .edition {
+                height: 26px;
+                font-size: 22px;
+                padding: 0 6px;
+                margin-top: -3px;
+                margin-right: 8px;
+                letter-spacing: -2px;
+            }
+            .schedule {
+                display: block;
+            }
+        }
+    }
+    section {
+        .box {
+            width: 50%;
+        }
+        .box01 {
+            width: 100%;
+            padding: 0;
+            .btn {
+                float: right;
+            }
+        }
+    }
+    body > footer {
+        .cc {
+            width: 150px;
+            bottom: 17px;
+        }
+    }
+}
+
+// Landscape phones and down
+@media (max-width: 480px) {
+    section {
+        .box {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+
 
 
 // ------------------------------------ //
