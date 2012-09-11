@@ -15,4 +15,4 @@ color: "#1C1C1C"
 	Com a ajuda da platéia, vamos codificar um jogo em <a href="http://nodejs.org" rel="external">Node.js</a> usando websockets.<br>
 	E ainda teremos talks rápidas apresentadas por vocês.
 </p>
-<a href="http://gri.fo/blog/code-n-bier-segunda-edicao/" class="btn" rel="external">Veja como foi</a>
+<a href="http://gri.fo/blog/code-n-bier-segunda-edicao/" class="btn" rel="external">veja como foi</a>

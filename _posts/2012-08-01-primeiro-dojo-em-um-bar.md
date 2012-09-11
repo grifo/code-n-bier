@@ -12,4 +12,4 @@ color: "#1E150E"
     <h1>O primeiro dojo de programação JavaScript dentro de um bar</h1>
 </header>
 <p>Nós levamos o problema e arrumamos o espaço.<br> A solução e diversão ficam por tua conta.</p>
-<a href="http://gri.fo/blog/code-n-bier-primeira-edicao/" class="btn" rel="external">Veja como foi</a>
+<a href="http://gri.fo/blog/code-n-bier-primeira-edicao/" class="btn" rel="external">veja como foi</a>
