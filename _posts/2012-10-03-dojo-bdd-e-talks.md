@@ -13,6 +13,6 @@ color: "#2D2416"
 </header>
 <p>
 	Behaviour-Driven Development é a evolução do processo de desenvolvimento apoiado em testes.<br>
-    Exclusivamente nesta edição, um espaço para tradução da documentação da MDN.
+    Exclusivamente nesta edição, um espaço para tradução da documentação da Mozilla.
 </p>
 <a href="http://bit.ly/PgywQ2" class="signup btn" rel="external">inscreva-se</a>
