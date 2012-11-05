@@ -61,7 +61,7 @@
             {% else %}
             <article class="item-{{ className }}" data-url="{{ post.url }}" data-image="/images/board/{{ post.edition }}.jpg" style="background-color:{{ post.color }};">
             {% endif %}
-                <div class="wrapper">{{ post.content }}</div>
+                <div class="wrapper edition-{{ post.edition }}">{{ post.content }}</div>
             </article>
         {% endfor %}
         </div>
